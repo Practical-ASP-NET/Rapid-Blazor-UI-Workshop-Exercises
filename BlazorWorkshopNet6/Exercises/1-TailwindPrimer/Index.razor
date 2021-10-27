@@ -1,0 +1,21 @@
+﻿@page "/tailwind"
+
+<div>
+    <button @onclick="OnButtonClicked">Click me!</button>
+
+    @if (timesClicked > 0)
+    {
+        <p class="text-xl mt-2">You clicked the button @timesClicked times!</p>
+    }
+
+</div>
+
+@code {
+    private int timesClicked = 0;
+
+    private void OnButtonClicked()
+    {
+        timesClicked++;
+    }
+
+}
