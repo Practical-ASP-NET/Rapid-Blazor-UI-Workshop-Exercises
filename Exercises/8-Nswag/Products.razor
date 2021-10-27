@@ -1,0 +1,17 @@
+@page "/nswag"
+@inject Client Api
+
+@foreach (var board in boards ?? Enumerable.Empty<Board>())
+{
+    @board.Name
+}
+
+@code {
+
+    protected override async Task OnInitializedAsync()
+    {
+        boards = await Api.GetBoardsAsync();
+    }
+
+    private ICollection<Board>? boards;
+}

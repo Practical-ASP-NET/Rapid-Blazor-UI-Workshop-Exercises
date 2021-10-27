@@ -1,0 +1,21 @@
+﻿@page "/products"
+
+@if (products != null)
+{
+    @foreach (var product in products)
+    {
+        // build product 'card' here!
+    }
+}
+
+@code {
+
+    private List<ProductApi.Product> products;
+
+    protected override Task OnInitializedAsync()
+    {
+        products = new ProductApi().ListAll();
+        return base.OnInitializedAsync();
+    }
+
+}
