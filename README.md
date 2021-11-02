@@ -4,8 +4,8 @@ You'll find two folders in this repository: a .NET 5 and a .NET 6 version of the
 
 If you want to use .NET 6 you'll need either:
 
-a) Visual Studio 2022 ([download here](https://visualstudio.microsoft.com/vs/preview/))
-b) or the .NET 6 SDK plus your favourite editor ([download the SDK here](https://dotnet.microsoft.com/download/dotnet/6.0))
+- Visual Studio 2022 ([download here](https://visualstudio.microsoft.com/vs/preview/))
+- **or** the .NET 6 SDK plus your favourite editor ([download the SDK here](https://dotnet.microsoft.com/download/dotnet/6.0))
 
 **AFAIK it isn't possible to use Visual Studio 2019 to work with a .NET 6 project.**
 
